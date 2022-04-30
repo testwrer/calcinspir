@@ -23,7 +23,7 @@ form.addEventListener('click', async event => {
             iframe.style.width = '100%';
             iframe.style.height = '100%';
             iframe.style.margin = '0';
-            iframe.src = __uv$config.prefix + __uv$config.encodeUrl(urle);
+            iframe.src = urle;
             console.log(iframe.src)
             win.document.body.appendChild(iframe)
 
