@@ -14,7 +14,7 @@ form.addEventListener('click', async event => {
         if ((localStorage.getItem('aboutBlankCloaking')) === 'true') {
 
 
-
+            var urle = "https://" + document.domain + __uv$config.prefix + __uv$config.encodeUrl(url);
             win = window.open();
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
@@ -23,13 +23,15 @@ form.addEventListener('click', async event => {
             iframe.style.width = '100%';
             iframe.style.height = '100%';
             iframe.style.margin = '0';
-            iframe.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+            iframe.src = __uv$config.prefix + __uv$config.encodeUrl(urle);
             console.log(iframe.src)
             win.document.body.appendChild(iframe)
 
+        } else {
+            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
         }
 
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+
     });
 });
 
