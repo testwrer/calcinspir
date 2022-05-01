@@ -1,26 +1,26 @@
 {
   "dependencies": {
     "bare-server-node": "github:tomphttp/bare-server-node",
-    "daisyui": "^2.14.1",
-    "flowbite": "^1.4.2",
+    "daisyui": "^2.14.3",
+    "flowbite": "^1.4.4",
     "node-static": "^0.7.11"
   },
-  "name": "uv-app",
+  "name": "lucid",
   "version": "1.0.0",
-  "description": "Ultraviolet instance",
+  "description": "Lucid",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
   "keywords": [
-    "proxy"
+    "lucid"
   ],
-  "author": "",
+  "author": "Astral Network",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "autoprefixer": "^10.4.5",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   }
 }
