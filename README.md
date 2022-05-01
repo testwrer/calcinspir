@@ -17,6 +17,9 @@
 - Blacklist setting and more for easy hosting
 - Security in mind and leak prevention
 - Frequent updates to improve site support or fix security issues
+- About:Blank cloaking to prevent screen viewing
+- Invisible in your history to facilitate harder blocking
+- Tab Cloaking to cloak your tab as something else
 
 ## Supported Sites
 - [Youtube](https://www.youtube.com)
@@ -24,12 +27,14 @@
 - [Spotify](https://spotify.com)
 - [Discord](https://discord.com)
 - [Reddit](https://reddit.com)
+- [GeoforceNow](https://www.nvidia.com/en-us/geforce-now/)
 - And more!
 
 ## Technologies Used
 - Service Workers
 - HTML, JS, CSS rewriting
 - Parse5
+- TailwindCSS
 - Acorn.js
 
 # Installation and Setup
@@ -41,12 +46,12 @@ Installation of Lucid is simple. You can view the BASIC GUIDE below!
 ```sh
 $ git clone https://github.com/pyroTM/LucidProxy
 $ npm install
-$ npm start
+$ node .
 ```
 
 | Configuration | Options and Explanation |
 | ------------- | ----------------------- |
-| Prefix | The prefix is the prefix that you want users to see. Ex: `https://lucidproxy.com/service` The default prefix is `service`. |
+| Prefix | The prefix is the prefix that you want users to see. Ex: `https://lucidofficial.xyz/service` The default prefix is `service`. |
 
 # Authors & Contributors
 
