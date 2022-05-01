@@ -60,10 +60,12 @@ $ node .
 - Illusions (Developer for Astral Network)
 - Arctiz (Community Manager for Astral Network)
 - Caracal.js (Creator of Ultraviolet)
+- NebulaServices (FakeStatic Code)
 
 # Credits
 - [https://github.com/titaniumnetwork-dev/](https://github.com/titaniumnetwork-dev/Ultraviolet)
 - https://github.com/ZeltuxDev
 - https://github.com/pyroTM
+- https://github.com/NebulaServices
 
 
