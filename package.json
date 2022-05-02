@@ -3,7 +3,8 @@
     "bare-server-node": "github:tomphttp/bare-server-node",
     "daisyui": "^2.14.3",
     "flowbite": "^1.4.4",
-    "node-static": "^0.7.11"
+    "node-static": "^0.7.11",
+    "dotenv": "^16.0.0"
   },
   "name": "lucid",
   "version": "1.0.0",
