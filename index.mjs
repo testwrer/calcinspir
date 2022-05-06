@@ -49,4 +49,4 @@ server.on('upgrade', (req, socket, head) => {
 });
 
 
-server.listen(process.env.PORT || 80);
+server.listen(process.env.PORT || 443);
