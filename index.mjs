@@ -1,5 +1,5 @@
 import Server from 'bare-server-node';
-import http from 'http';
+import https from 'https';
 import nodeStatic from 'node-static';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -8,7 +8,7 @@ const bare = new Server('/bare/', '');
 const serve = new nodeStatic.Server('static/');
 const fakeServe = new nodeStatic.Server('BlacklistServe/');
 
-const server = http.createServer();
+const server = https.createServer();
 
 server.on('request', (request, response) => {
     /* Example env file: 
@@ -49,4 +49,4 @@ server.on('upgrade', (req, socket, head) => {
 });
 
 
-server.listen(process.env.PORT || 8080);
+server.listen(process.env.PORT || 80);
