@@ -1,5 +1,5 @@
 import Server from 'bare-server-node';
-import http from 'http';
+import https from 'https';
 import nodeStatic from 'node-static';
 import dotenv from 'dotenv';
 
@@ -8,7 +8,19 @@ const bare = new Server('/bare/', '');
 const serve = new nodeStatic.Server('static/');
 const fakeServe = new nodeStatic.Server('BlacklistServe/');
 
-const server = http.createServer();
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/chain.pem', 'utf8');
+
+const credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: ca
+};
+
+
+const server = https.createServer(credentials);
+
 
 server.on('request', (request, response) => {
 
