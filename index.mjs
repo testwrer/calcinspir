@@ -1,5 +1,5 @@
 import Server from 'bare-server-node';
-import http from 'https';
+import http from 'http';
 import nodeStatic from 'node-static';
 import dotenv from 'dotenv';
 
